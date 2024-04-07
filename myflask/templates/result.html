@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相似图片结果</title>
+</head>
+<body>
+    <h1>相似图片</h1>
+        <div>
+            {% for image in similar_images %}
+                <img src="{{ url_for('static', filename=image) }}" alt="相似图片" style="width:200px;height:auto;">
+            {% endfor %}
+        </div>
+</body>
+</html>
